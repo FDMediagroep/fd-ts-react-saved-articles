@@ -108,6 +108,116 @@ exports[`SavedArticles renders correctly 1`] = `
       />
     </div>
   </nav>
+  <nav
+    className="optional-content"
+  >
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/opinie/1288043/vertrouwen-van-werknemers-is-kostbaar-goed-dat-menige-werkgever-keer-op-keer-blijft-beschamen"
+      >
+        <time>
+          Gisteren
+        </time>
+        <span>
+          Vertrouwen van werknemers is kostbaar goed dat menige werkgever keer op keer blijft beschamen
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="6"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/achtergrond/1288289/verschillen-tussen-eurolanden-gaan-weer-opspelen"
+      >
+        <time>
+          Eergisteren
+        </time>
+        <span>
+          Verschillen tussen eurolanden gaan weer opspelen
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="7"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1288325/politieke-druk-op-vestager-is-onverteerbaar"
+      >
+        <time>
+          Vorige week
+        </time>
+        <span>
+          Politieke druk op Vestager is onverteerbaar
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="8"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1287621/leraren-slaan-alarm-scholen-stoppen-met-informatica-in-de-bovenbouw"
+      >
+        <time>
+          Afgelopen maand
+        </time>
+        <span>
+          Leraren slaan alarm: scholen stoppen met informatica in de bovenbouw
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="9"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/opinie/1288142/zorgsector-kan-kunstmatige-intelligentie-veel-slimmer-inzetten"
+      >
+        <time>
+          Vorig jaar
+        </time>
+        <span>
+          Zorgsector kan kunstmatige intelligentie veel slimmer inzetten
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="10"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <span
+    className="show-less"
+    onClick={[Function]}
+  >
+    <i
+      className="icon-chevron-up"
+    />
+    <div>
+      Toon minder
+    </div>
+  </span>
   <span
     className="show-more"
     onClick={[Function]}
@@ -230,6 +340,116 @@ exports[`SavedArticles renders correctly 2`] = `
       />
     </div>
   </nav>
+  <nav
+    className="optional-content"
+  >
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/opinie/1288043/vertrouwen-van-werknemers-is-kostbaar-goed-dat-menige-werkgever-keer-op-keer-blijft-beschamen"
+      >
+        <time>
+          Gisteren
+        </time>
+        <span>
+          Vertrouwen van werknemers is kostbaar goed dat menige werkgever keer op keer blijft beschamen
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="6"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/achtergrond/1288289/verschillen-tussen-eurolanden-gaan-weer-opspelen"
+      >
+        <time>
+          Eergisteren
+        </time>
+        <span>
+          Verschillen tussen eurolanden gaan weer opspelen
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="7"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1288325/politieke-druk-op-vestager-is-onverteerbaar"
+      >
+        <time>
+          Vorige week
+        </time>
+        <span>
+          Politieke druk op Vestager is onverteerbaar
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="8"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1287621/leraren-slaan-alarm-scholen-stoppen-met-informatica-in-de-bovenbouw"
+      >
+        <time>
+          Afgelopen maand
+        </time>
+        <span>
+          Leraren slaan alarm: scholen stoppen met informatica in de bovenbouw
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="9"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/opinie/1288142/zorgsector-kan-kunstmatige-intelligentie-veel-slimmer-inzetten"
+      >
+        <time>
+          Vorig jaar
+        </time>
+        <span>
+          Zorgsector kan kunstmatige intelligentie veel slimmer inzetten
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="10"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <span
+    className="show-less"
+    onClick={[Function]}
+  >
+    <i
+      className="icon-chevron-up"
+    />
+    <div>
+      Toon minder
+    </div>
+  </span>
   <span
     className="show-more"
     onClick={[Function]}
@@ -352,6 +572,116 @@ exports[`SavedArticles renders persoonlijk correctly 1`] = `
       />
     </div>
   </nav>
+  <nav
+    className="optional-content"
+  >
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/opinie/1288043/vertrouwen-van-werknemers-is-kostbaar-goed-dat-menige-werkgever-keer-op-keer-blijft-beschamen"
+      >
+        <time>
+          Gisteren
+        </time>
+        <span>
+          Vertrouwen van werknemers is kostbaar goed dat menige werkgever keer op keer blijft beschamen
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="6"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/achtergrond/1288289/verschillen-tussen-eurolanden-gaan-weer-opspelen"
+      >
+        <time>
+          Eergisteren
+        </time>
+        <span>
+          Verschillen tussen eurolanden gaan weer opspelen
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="7"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1288325/politieke-druk-op-vestager-is-onverteerbaar"
+      >
+        <time>
+          Vorige week
+        </time>
+        <span>
+          Politieke druk op Vestager is onverteerbaar
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="8"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1287621/leraren-slaan-alarm-scholen-stoppen-met-informatica-in-de-bovenbouw"
+      >
+        <time>
+          Afgelopen maand
+        </time>
+        <span>
+          Leraren slaan alarm: scholen stoppen met informatica in de bovenbouw
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="9"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/opinie/1288142/zorgsector-kan-kunstmatige-intelligentie-veel-slimmer-inzetten"
+      >
+        <time>
+          Vorig jaar
+        </time>
+        <span>
+          Zorgsector kan kunstmatige intelligentie veel slimmer inzetten
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="10"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <span
+    className="show-less"
+    onClick={[Function]}
+  >
+    <i
+      className="icon-chevron-up"
+    />
+    <div>
+      Toon minder
+    </div>
+  </span>
   <span
     className="show-more"
     onClick={[Function]}
@@ -474,6 +804,116 @@ exports[`SavedArticles renders persoonlijk correctly 2`] = `
       />
     </div>
   </nav>
+  <nav
+    className="optional-content"
+  >
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/opinie/1288043/vertrouwen-van-werknemers-is-kostbaar-goed-dat-menige-werkgever-keer-op-keer-blijft-beschamen"
+      >
+        <time>
+          Gisteren
+        </time>
+        <span>
+          Vertrouwen van werknemers is kostbaar goed dat menige werkgever keer op keer blijft beschamen
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="6"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/achtergrond/1288289/verschillen-tussen-eurolanden-gaan-weer-opspelen"
+      >
+        <time>
+          Eergisteren
+        </time>
+        <span>
+          Verschillen tussen eurolanden gaan weer opspelen
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="7"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1288325/politieke-druk-op-vestager-is-onverteerbaar"
+      >
+        <time>
+          Vorige week
+        </time>
+        <span>
+          Politieke druk op Vestager is onverteerbaar
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="8"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1287621/leraren-slaan-alarm-scholen-stoppen-met-informatica-in-de-bovenbouw"
+      >
+        <time>
+          Afgelopen maand
+        </time>
+        <span>
+          Leraren slaan alarm: scholen stoppen met informatica in de bovenbouw
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="9"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/opinie/1288142/zorgsector-kan-kunstmatige-intelligentie-veel-slimmer-inzetten"
+      >
+        <time>
+          Vorig jaar
+        </time>
+        <span>
+          Zorgsector kan kunstmatige intelligentie veel slimmer inzetten
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="10"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <span
+    className="show-less"
+    onClick={[Function]}
+  >
+    <i
+      className="icon-chevron-up"
+    />
+    <div>
+      Toon minder
+    </div>
+  </span>
   <span
     className="show-more"
     onClick={[Function]}

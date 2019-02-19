@@ -34,25 +34,16 @@ export default class SavedArticles extends PureComponent<Props, any> {
     onShowLess = () => {
         this.setState({showAll: false});
     }
-
     render() {
-        let showMoreLess: JSX.Element = <></>;
-        if (this.props.items.length > 5) {
-            if (this.state.showAll) {
-                showMoreLess = <span className="show-less" onClick={this.onShowLess}><i className="icon-chevron-up"/><div>Toon minder</div></span>;
-            } else {
-                showMoreLess = <span className="show-more" onClick={this.onShowMore}><div>Toon meer</div><i className="icon-chevron-down"/></span>;
-            }
-        }
         return (
             <>
                 <GlobalStyle/>
-                <Card cardStyle={this.props.cardStyle} className={`fd-saved-articles${this.props.className ? ` ${this.props.className}` : ''}`}>
+                <Card cardStyle={this.props.cardStyle} className={`fd-saved-articles${this.props.className ? ` ${this.props.className}` : ''}${this.state.showAll ? ' show-all' : ''}`}>
                     <TypoGraphy textStyle="card-h" className="fd-saved-articles-h"><h3>{this.props.title ? this.props.title : 'Bewaarde artikelen'}</h3></TypoGraphy>
                     <nav>
                         {
                             this.props.items.map((newsItem, idx: number) => {
-                                if (!this.state.showAll && idx > 4) { return null; }
+                                if (idx > 4) { return null; }
                                 return (
                                     <div className="news-item" key={newsItem.id}>
                                         <a href={newsItem.url}>
@@ -65,7 +56,27 @@ export default class SavedArticles extends PureComponent<Props, any> {
                             })
                         }
                     </nav>
-                    {showMoreLess}
+                    {this.props.items.length > 4 ?
+                        <>
+                            <nav className="optional-content">
+                                {
+                                    this.props.items.map((newsItem, idx: number) => {
+                                        if (idx <= 4) { return null; }
+                                        return (
+                                            <div className="news-item" key={newsItem.id}>
+                                                <a href={newsItem.url}>
+                                                    <time>{newsItem.dateTime}</time>
+                                                    <span>{newsItem.label}</span>
+                                                </a>
+                                                <i className="icon-times" data-uuid={newsItem.id} onClick={this.onDelete}/>
+                                            </div>
+                                        );
+                                    })
+                                }
+                            </nav>
+                            <span className="show-less" onClick={this.onShowLess}><i className="icon-chevron-up"/><div>Toon minder</div></span>
+                            <span className="show-more" onClick={this.onShowMore}><div>Toon meer</div><i className="icon-chevron-down"/></span>
+                        </> : null}
                 </Card>
             </>
         );
@@ -131,10 +142,30 @@ const GlobalStyle = createGlobalStyle`
         user-select: none;
     }
 
+    .show-less,
+    .optional-content {
+        display: none;
+    }
+
+    .show-more {
+        display: flex;
+    }
+
+    &.show-all {
+        .show-less {
+            display: flex;
+        }
+        .optional-content {
+            display: block;
+        }
+        .show-more {
+            display: none;
+        }
+    }
+
     .show-more, .show-less {
         user-select: none;
         border-top: 1px solid rgba(0,0,0,0.1);
-        display: flex;
         flex-direction: column;
         justify-content: center;
         cursor: pointer;
