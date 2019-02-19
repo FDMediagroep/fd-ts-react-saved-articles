@@ -1,0 +1,489 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SavedArticles renders correctly 1`] = `
+<div
+  cardStyle="default"
+  className="fd-card fd-saved-articles default"
+>
+  <h3
+    className="fd-typography card-h fd-saved-articles-h"
+    textStyle="card-h"
+  >
+    Bewaarde artikelen
+  </h3>
+  <nav>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1288267/trump-vraagt-om-politieke-samenwerking-in-state-of-the-union"
+      >
+        <time>
+          11:18
+        </time>
+        <span>
+          Trump vraagt om politieke samenwerking in State of the Union
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="1"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1287621/leraren-slaan-alarm-scholen-stoppen-met-informatica-in-de-bovenbouw"
+      >
+        <time>
+          12:19
+        </time>
+        <span>
+          Leraren slaan alarm: scholen stoppen met informatica in de bovenbouw
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="2"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/achtergrond/1288289/verschillen-tussen-eurolanden-gaan-weer-opspelen"
+      >
+        <time>
+          13:20
+        </time>
+        <span>
+          Verschillen tussen eurolanden gaan weer opspelen 
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="3"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/ondernemen/1288060/ing-boekt-meer-winst-dan-verwacht"
+      >
+        <time>
+          14:21
+        </time>
+        <span>
+          ING boekt meer winst dan verwacht
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="4"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/beurs/1288359/beleggers-reageren-op-cijfers-ing-en-tomtom"
+      >
+        <time>
+          Vandaag
+        </time>
+        <span>
+          ING blinkt uit op hoger Damrak
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="5"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <span
+    className="show-more"
+    onClick={[Function]}
+  >
+    <div>
+      Toon meer
+    </div>
+    <i
+      className="icon-chevron-down"
+    />
+  </span>
+</div>
+`;
+
+exports[`SavedArticles renders correctly 2`] = `
+<div
+  cardStyle="default"
+  className="fd-card fd-saved-articles default"
+>
+  <h3
+    className="fd-typography card-h fd-saved-articles-h"
+    textStyle="card-h"
+  >
+    Bewaarde artikelen
+  </h3>
+  <nav>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1288267/trump-vraagt-om-politieke-samenwerking-in-state-of-the-union"
+      >
+        <time>
+          11:18
+        </time>
+        <span>
+          Trump vraagt om politieke samenwerking in State of the Union
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="1"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1287621/leraren-slaan-alarm-scholen-stoppen-met-informatica-in-de-bovenbouw"
+      >
+        <time>
+          12:19
+        </time>
+        <span>
+          Leraren slaan alarm: scholen stoppen met informatica in de bovenbouw
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="2"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/achtergrond/1288289/verschillen-tussen-eurolanden-gaan-weer-opspelen"
+      >
+        <time>
+          13:20
+        </time>
+        <span>
+          Verschillen tussen eurolanden gaan weer opspelen 
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="3"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/ondernemen/1288060/ing-boekt-meer-winst-dan-verwacht"
+      >
+        <time>
+          14:21
+        </time>
+        <span>
+          ING boekt meer winst dan verwacht
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="4"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/beurs/1288359/beleggers-reageren-op-cijfers-ing-en-tomtom"
+      >
+        <time>
+          Vandaag
+        </time>
+        <span>
+          ING blinkt uit op hoger Damrak
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="5"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <span
+    className="show-more"
+    onClick={[Function]}
+  >
+    <div>
+      Toon meer
+    </div>
+    <i
+      className="icon-chevron-down"
+    />
+  </span>
+</div>
+`;
+
+exports[`SavedArticles renders persoonlijk correctly 1`] = `
+<div
+  cardStyle="persoonlijk"
+  className="fd-card fd-saved-articles persoonlijk"
+>
+  <h3
+    className="fd-typography card-h fd-saved-articles-h"
+    textStyle="card-h"
+  >
+    Bewaarde artikelen
+  </h3>
+  <nav>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1288267/trump-vraagt-om-politieke-samenwerking-in-state-of-the-union"
+      >
+        <time>
+          11:18
+        </time>
+        <span>
+          Trump vraagt om politieke samenwerking in State of the Union
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="1"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1287621/leraren-slaan-alarm-scholen-stoppen-met-informatica-in-de-bovenbouw"
+      >
+        <time>
+          12:19
+        </time>
+        <span>
+          Leraren slaan alarm: scholen stoppen met informatica in de bovenbouw
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="2"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/achtergrond/1288289/verschillen-tussen-eurolanden-gaan-weer-opspelen"
+      >
+        <time>
+          13:20
+        </time>
+        <span>
+          Verschillen tussen eurolanden gaan weer opspelen 
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="3"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/ondernemen/1288060/ing-boekt-meer-winst-dan-verwacht"
+      >
+        <time>
+          14:21
+        </time>
+        <span>
+          ING boekt meer winst dan verwacht
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="4"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/beurs/1288359/beleggers-reageren-op-cijfers-ing-en-tomtom"
+      >
+        <time>
+          Vandaag
+        </time>
+        <span>
+          ING blinkt uit op hoger Damrak
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="5"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <span
+    className="show-more"
+    onClick={[Function]}
+  >
+    <div>
+      Toon meer
+    </div>
+    <i
+      className="icon-chevron-down"
+    />
+  </span>
+</div>
+`;
+
+exports[`SavedArticles renders persoonlijk correctly 2`] = `
+<div
+  cardStyle="persoonlijk"
+  className="fd-card fd-saved-articles persoonlijk"
+>
+  <h3
+    className="fd-typography card-h fd-saved-articles-h"
+    textStyle="card-h"
+  >
+    Bewaarde artikelen
+  </h3>
+  <nav>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1288267/trump-vraagt-om-politieke-samenwerking-in-state-of-the-union"
+      >
+        <time>
+          11:18
+        </time>
+        <span>
+          Trump vraagt om politieke samenwerking in State of the Union
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="1"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/economie-politiek/1287621/leraren-slaan-alarm-scholen-stoppen-met-informatica-in-de-bovenbouw"
+      >
+        <time>
+          12:19
+        </time>
+        <span>
+          Leraren slaan alarm: scholen stoppen met informatica in de bovenbouw
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="2"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/achtergrond/1288289/verschillen-tussen-eurolanden-gaan-weer-opspelen"
+      >
+        <time>
+          13:20
+        </time>
+        <span>
+          Verschillen tussen eurolanden gaan weer opspelen 
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="3"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/ondernemen/1288060/ing-boekt-meer-winst-dan-verwacht"
+      >
+        <time>
+          14:21
+        </time>
+        <span>
+          ING boekt meer winst dan verwacht
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="4"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="news-item"
+    >
+      <a
+        href="https://fd.nl/beurs/1288359/beleggers-reageren-op-cijfers-ing-en-tomtom"
+      >
+        <time>
+          Vandaag
+        </time>
+        <span>
+          ING blinkt uit op hoger Damrak
+        </span>
+      </a>
+      <i
+        className="icon-times"
+        data-uuid="5"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <span
+    className="show-more"
+    onClick={[Function]}
+  >
+    <div>
+      Toon meer
+    </div>
+    <i
+      className="icon-chevron-down"
+    />
+  </span>
+</div>
+`;
