@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-saved-articles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "FD-themed saved articles",
   "types": "dist/SavedArticles.d.ts",
   "main": "dist/saved-articles.js",
@@ -44,6 +44,7 @@
     "@types/react-test-renderer": "^16.8.1",
     "@types/styled-components": "4.1.10",
     "@types/uniqid": "^4.1.3",
+    "@types/webpack-env": "^1.13.7",
     "awesome-typescript-loader": "^5.2.1",
     "chokidar": "^2.1.1",
     "coveralls": "^3.0.2",
