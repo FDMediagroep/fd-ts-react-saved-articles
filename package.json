@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-saved-articles",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "FD-themed saved articles",
   "types": "dist/SavedArticles.d.ts",
   "main": "dist/saved-articles.js",

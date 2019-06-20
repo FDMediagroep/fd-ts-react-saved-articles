@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React, { useState } from "react";
 import Card, { CardTypes, getAllCardStyles } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
 import { createGlobalStyle, css } from "styled-components";
@@ -18,69 +18,66 @@ export interface Props {
     title?: string;
 }
 
-export default class SavedArticles extends PureComponent<Props, any> {
-    state: any = {
-        showAll: false
+export default function SavedArticles(props: Props) {
+    const [showAll, setShowAll] = useState(false);
+
+    const onDelete = (e: React.MouseEvent<HTMLElement>) => {
+        if (props.onDelete) { props.onDelete(e.currentTarget.getAttribute('data-uuid') as string); }
     };
 
-    onDelete = (e: React.MouseEvent<HTMLElement>) => {
-        if (this.props.onDelete) { this.props.onDelete(e.currentTarget.getAttribute('data-uuid') as string); }
-    }
+    const onShowMore = () => {
+        setShowAll(true);
+    };
 
-    onShowMore = () => {
-        this.setState({showAll: true});
-    }
+    const onShowLess = () => {
+        setShowAll(false);
+    };
 
-    onShowLess = () => {
-        this.setState({showAll: false});
-    }
-    render() {
-        return (
-            <>
-                <GlobalStyle/>
-                <Card cardStyle={this.props.cardStyle} className={`fd-saved-articles${this.props.className ? ` ${this.props.className}` : ''}${this.state.showAll ? ' show-all' : ''}`}>
-                    <TypoGraphy textStyle="card-h" className="fd-saved-articles-h"><h3>{this.props.title ? this.props.title : 'Bewaarde artikelen'}</h3></TypoGraphy>
-                    <nav>
-                        {
-                            this.props.items.map((newsItem, idx: number) => {
-                                if (idx > 4) { return null; }
-                                return (
-                                    <div className="news-item" key={newsItem.id}>
-                                        <a href={newsItem.url}>
-                                            <time>{newsItem.dateTime}</time>
-                                            <span>{newsItem.label}</span>
-                                        </a>
-                                        <i className="icon-times" data-uuid={newsItem.id} onClick={this.onDelete}/>
-                                    </div>
-                                );
-                            })
-                        }
-                    </nav>
-                    {this.props.items.length > 4 ?
-                        <>
-                            <nav className="optional-content">
-                                {
-                                    this.props.items.map((newsItem, idx: number) => {
-                                        if (idx <= 4) { return null; }
-                                        return (
-                                            <div className="news-item" key={newsItem.id}>
-                                                <a href={newsItem.url}>
-                                                    <time>{newsItem.dateTime}</time>
-                                                    <span>{newsItem.label}</span>
-                                                </a>
-                                                <i className="icon-times" data-uuid={newsItem.id} onClick={this.onDelete}/>
-                                            </div>
-                                        );
-                                    })
-                                }
-                            </nav>
-                            <span className="show-less" onClick={this.onShowLess}><i className="icon-chevron-up"/><div>Toon minder</div></span>
-                            <span className="show-more" onClick={this.onShowMore}><div>Toon meer</div><i className="icon-chevron-down"/></span>
-                        </> : null}
-                </Card>
-            </>
-        );
-    }
+    return (
+        <>
+            <GlobalStyle/>
+            <Card cardStyle={props.cardStyle} className={`fd-saved-articles${props.className ? ` ${props.className}` : ''}${showAll ? ' show-all' : ''}`}>
+                <TypoGraphy textStyle="card-h" className="fd-saved-articles-h"><h3>{props.title ? props.title : 'Bewaarde artikelen'}</h3></TypoGraphy>
+                <nav>
+                    {
+                        props.items.map((newsItem, idx: number) => {
+                            if (idx > 4) { return null; }
+                            return (
+                                <div className="news-item" key={newsItem.id}>
+                                    <a href={newsItem.url}>
+                                        <time>{newsItem.dateTime}</time>
+                                        <span>{newsItem.label}</span>
+                                    </a>
+                                    <i className="icon-times" data-uuid={newsItem.id} onClick={onDelete}/>
+                                </div>
+                            );
+                        })
+                    }
+                </nav>
+                {props.items.length > 4 ?
+                    <>
+                        <nav className="optional-content">
+                            {
+                                props.items.map((newsItem, idx: number) => {
+                                    if (idx <= 4) { return null; }
+                                    return (
+                                        <div className="news-item" key={newsItem.id}>
+                                            <a href={newsItem.url}>
+                                                <time>{newsItem.dateTime}</time>
+                                                <span>{newsItem.label}</span>
+                                            </a>
+                                            <i className="icon-times" data-uuid={newsItem.id} onClick={onDelete}/>
+                                        </div>
+                                    );
+                                })
+                            }
+                        </nav>
+                        <span className="show-less" onClick={onShowLess}><i className="icon-chevron-up"/><div>Toon minder</div></span>
+                        <span className="show-more" onClick={onShowMore}><div>Toon meer</div><i className="icon-chevron-down"/></span>
+                    </> : null}
+            </Card>
+        </>
+    );
 }
 
 const styles = css`
@@ -185,10 +182,10 @@ const styles = css`
 }
 `;
 
-const GlobalStyle = createGlobalStyle`${styles}`;
-
 export const SavedArticlesStyle = css`
 ${getAllCardStyles()}
 ${getAllTextStyles(['card-h'])}
 ${styles}
 `;
+
+const GlobalStyle = createGlobalStyle`${SavedArticlesStyle}`;

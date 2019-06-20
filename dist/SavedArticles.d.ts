@@ -1,4 +1,3 @@
-import React, { PureComponent } from "react";
 import { CardTypes } from "@fdmg/fd-card";
 interface NewsItem {
     id: string;
@@ -13,12 +12,6 @@ export interface Props {
     onDelete?: (id: string) => void;
     title?: string;
 }
-export default class SavedArticles extends PureComponent<Props, any> {
-    state: any;
-    onDelete: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
-    onShowMore: () => void;
-    onShowLess: () => void;
-    render(): JSX.Element;
-}
+export default function SavedArticles(props: Props): JSX.Element;
 export declare const SavedArticlesStyle: import("styled-components").FlattenSimpleInterpolation;
 export {};
