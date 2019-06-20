@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import Card, { CardTypes, getAllCardStyles } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 interface NewsItem {
     id: string;
@@ -83,7 +83,7 @@ export default class SavedArticles extends PureComponent<Props, any> {
     }
 }
 
-const GlobalStyle = createGlobalStyle`
+const styles = css`
 .fd-saved-articles {
     .card-h.fd-saved-articles-h,
     .news-item > a {
@@ -185,8 +185,10 @@ const GlobalStyle = createGlobalStyle`
 }
 `;
 
-export const SavedArticlesStyle = createGlobalStyle`
-${getAllCardStyles().globalStyle.rules}
-${getAllTextStyles(['card-h']).globalStyle.rules}
-${(GlobalStyle as any).globalStyle.rules}
+const GlobalStyle = createGlobalStyle`${styles}`;
+
+export const SavedArticlesStyle = css`
+${getAllCardStyles()}
+${getAllTextStyles(['card-h'])}
+${styles}
 `;

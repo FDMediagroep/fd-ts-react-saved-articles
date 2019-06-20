@@ -20,5 +20,5 @@ export default class SavedArticles extends PureComponent<Props, any> {
     onShowLess: () => void;
     render(): JSX.Element;
 }
-export declare const SavedArticlesStyle: import("styled-components").GlobalStyleComponent<{}, import("styled-components").DefaultTheme>;
+export declare const SavedArticlesStyle: import("styled-components").FlattenSimpleInterpolation;
 export {};
