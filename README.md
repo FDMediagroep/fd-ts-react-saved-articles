@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/FDMediagroep/fd-ts-react-saved-articles.svg?branch=master)](https://travis-ci.org/FDMediagroep/fd-ts-react-saved-articles)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fd-ts-react-saved-articles/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fd-ts-react-saved-articles?branch=master)
 [![npm version](https://badge.fury.io/js/%40fdmg%2Ffd-saved-articles.svg)](https://badge.fury.io/js/%40fdmg%2Ffd-saved-articles)
-[![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fd-ts-react-saved-articles.svg)](https://greenkeeper.io/)
+
 
 # fd-saved-articles
 FD-themed saved articles.
